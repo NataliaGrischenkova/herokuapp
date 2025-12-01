@@ -1,3 +1,5 @@
+package seleniumwebdriverbases;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -29,7 +31,7 @@ public class DropdownTest extends BaseTest {
         // Выбрать Option2, проверить что выбралось.
         select.selectByVisibleText("Option 2");
 
-        WebElement option2 =  select.getFirstSelectedOption();
+        WebElement option2 = select.getFirstSelectedOption();
         assertEquals(option2.getText(), "Option 2");
     }
 }
